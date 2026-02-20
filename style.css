@@ -1,0 +1,104 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial Black, sans-serif;
+}
+
+body {
+    background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+    color: white;
+}
+
+.loader {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: black;
+}
+
+.logo-3d {
+    font-size: 60px;
+    color: #00f5ff;
+    text-shadow: 
+        2px 2px 0 #0099ff,
+        4px 4px 0 #0066ff,
+        6px 6px 10px rgba(0,0,0,0.6);
+    animation: rotate 2s ease-in-out infinite alternate;
+}
+
+@keyframes rotate {
+    from { transform: rotateY(0deg); }
+    to { transform: rotateY(20deg); }
+}
+
+.main-content {
+    display: none;
+}
+
+header {
+    text-align: center;
+    padding: 60px 20px;
+}
+
+.logo {
+    width: 120px;
+    margin-bottom: 20px;
+}
+
+header h1 {
+    font-size: 48px;
+}
+
+header p {
+    font-size: 20px;
+    opacity: 0.8;
+}
+
+section {
+    padding: 60px 20px;
+    max-width: 1000px;
+    margin: auto;
+    text-align: center;
+}
+
+h2 {
+    font-size: 36px;
+    margin-bottom: 30px;
+    color: #00f5ff;
+}
+
+.services .card {
+    background: rgba(255,255,255,0.1);
+    padding: 25px;
+    margin: 20px 0;
+    border-radius: 10px;
+    transition: 0.3s ease;
+}
+
+.services .card:hover {
+    transform: translateY(-10px);
+    background: rgba(0,245,255,0.2);
+}
+
+.btn {
+    display: inline-block;
+    padding: 15px 30px;
+    background: #00f5ff;
+    color: black;
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: 0.3s ease;
+}
+
+.btn:hover {
+    background: white;
+}
+
+footer {
+    text-align: center;
+    padding: 30px;
+    background: rgba(0,0,0,0.4);
+}
